@@ -23,6 +23,7 @@ WHERE director != "John Lasseter";
 
 -- SQL Lesson 4: Filtering and sorting query results
 -- List the last four Pixar movies released (ordered from most recent to least)
-SELECT DISTINCT director
+SELECT title, year 
 FROM movies
-ORDER BY director ASC;
+ORDER BY year DESC
+LIMIT 4;
