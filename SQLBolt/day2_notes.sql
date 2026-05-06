@@ -9,7 +9,7 @@ WHERE international_sales > domestic_sales;
 
 -- SQL Lesson 7: OUTER JOINs
 -- List all buildings and the distinct employee roles in each building (including empty buildings)
--- Given two tables  with asymmetric data
+-- Given two tables with asymmetric data
 SELECT DISTINCT building_name, role
 FROM buildings
 LEFT JOIN employees
@@ -17,7 +17,7 @@ LEFT JOIN employees
 
 -- SQL Lesson 8: NULLs
 -- Find the names of the buildings that hold no employees 
--- Given two tables  with asymmetric data
+-- Given two tables with asymmetric data
 SELECT DISTINCT building_name
 FROM buildings
 LEFT JOIN employees
@@ -26,7 +26,7 @@ WHERE role IS NULL;
 
 -- SQL Lesson 9: Learning with expressions
 -- List all movies and their combined sales in millions of dollars
--- Given two tables  with asymmetric data
+-- Given two tables with symmetric data
 SELECT title, (domestic_sales + international_sales) / 1000000 AS combined_sales
 FROM movies
 INNER JOIN boxoffice
