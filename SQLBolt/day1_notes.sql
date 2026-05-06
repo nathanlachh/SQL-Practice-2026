@@ -10,7 +10,7 @@ SELECT title, year
 FROM movies;
 
 -- SQL Lesson 2: Queries with Constraints (pt.1)
--- Finding movies not released in years between 2000 and 2010
+-- Finding movies released in years between 2000 and 2010
 SELECT title, year
 FROM movies
 WHERE year BETWEEN 2000 and 2010;
